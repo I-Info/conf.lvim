@@ -274,6 +274,11 @@ vim.api.nvim_create_autocmd('ColorScheme', {
 
 leap.opts.highlight_unlabeled_phase_one_targets = true
 
+-- nvim-cmp
+-- local cmp = require("cmp")
+lvim.builtin.cmp.window.completion.border = nil
+lvim.builtin.cmp.window.documentation.border = nil
+
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.json", "*.jsonc" },
