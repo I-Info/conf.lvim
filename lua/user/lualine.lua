@@ -8,18 +8,22 @@ sections.lualine_a = {
 }
 sections.lualine_b = {
   "branch",
-  components.diff,
-  components.diagnostics,
 }
 sections.lualine_c = {
   components.python_env,
+  components.diff,
   components.filename,
 }
+
 sections.lualine_x = {
-  components.lsp, 'encoding', 'fileformat', 'filetype',
+  components.lsp,
+  components.diagnostics,
+  'encoding',
+  -- 'fileformat',
+  components.spaces,
+  'filetype',
 }
 sections.lualine_y = {
-  components.spaces,
   components.location,
 }
 sections.lualine_z = {
