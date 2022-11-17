@@ -8,3 +8,6 @@ lvim.builtin.terminal.active = true
 
 lvim.builtin.cmp.window.completion.border = nil
 lvim.builtin.cmp.window.documentation.border = nil
+
+-- vim.opt.spell = true
+-- vim.opt.list = true
