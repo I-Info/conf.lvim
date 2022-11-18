@@ -4,9 +4,9 @@ lvim.leader = "space"
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 lvim.keys.normal_mode["<A-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<A-h>"] = ":BufferLineCyclePrev<CR>"
-lvim.keys.normal_mode[",b"] = ":BufferLinePick<CR>"
+lvim.keys.normal_mode["Fb"] = ":BufferLinePick<CR>"
 
-vim.keymap.set({ 'n', 'v' }, ',l', require("user.leap").leap_to_line)
+vim.keymap.set({ 'n', 'v' }, 'Fl', require("user.leap").leap_to_line)
 vim.keymap.set({ 'n', 'i', 'v' }, '<C-s>', require("user.leap").leap_bidirectional)
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
