@@ -49,7 +49,7 @@ function M.leap_bidirectional()
 end
 
 function M.leap_highlight()
-  vim.api.nvim_set_hl(0, 'LeapBackdrop', { link = 'Comment' })
+  vim.api.nvim_set_hl(0, 'LeapBackdrop', { link = 'Conceal' })
   vim.api.nvim_set_hl(0, 'LeapMatch', {
     fg = 'white', -- for light themes, set to 'black' or similar
     bold = true,

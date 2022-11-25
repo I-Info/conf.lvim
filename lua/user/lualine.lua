@@ -24,9 +24,9 @@ sections.lualine_x = {
   'filetype',
 }
 sections.lualine_y = {
-  components.progress,
-}
-sections.lualine_z = {
   components.location,
   -- "location"
+}
+sections.lualine_z = {
+  components.progress,
 }

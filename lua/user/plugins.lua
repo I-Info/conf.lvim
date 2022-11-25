@@ -38,15 +38,20 @@ lvim.plugins = {
       end, 100)
     end,
   },
-
   { "zbirenbaum/copilot-cmp",
     after = { "copilot.lua", "nvim-cmp" },
     config = function()
       require("copilot_cmp").setup()
     end
-  }, -- Disabled Plgins
+  },
+  { "sainnhe/gruvbox-material" },
+  -- Disabled Plgins
+  -- { "olimorris/onedarkpro.nvim" },
   -- { "mg979/vim-visual-multi" },
 }
 
 lvim.builtin.cmp.formatting.source_names["copilot"] = "(Copilot)"
--- table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })
+vim.g.gruvbox_material_background = 'medium'
+vim.g.gruvbox_material_diagnostic_virtual_text = 'colored'
+vim.g.gruvbox_material_enable_bold = 1
+vim.g.gruvbox_material_enable_italic = 1
