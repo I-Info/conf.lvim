@@ -16,6 +16,8 @@
 
 -- ---@usage disable automatic installation of servers
 lvim.lsp.installer.setup.automatic_installation = false
+require("lvim.lsp.manager").setup("taplo", {})
+-- require('lspconfig').taplo.setup {}
 
 -- ---configure a server manually. !!Requires `:LvimCacheReset` to take effect!!
 -- ---see the full default list `:lua print(vim.inspect(lvim.lsp.automatic_configuration.skipped_servers))`
@@ -40,7 +42,10 @@ lvim.lsp.installer.setup.automatic_installation = false
 -- end
 
 -- -- set a formatter, this will override the language server formatting capabilities (if it exists)
--- local formatters = require "lvim.lsp.null-ls.formatters"
+local formatters = require "lvim.lsp.null-ls.formatters"
+formatters.setup {
+  { command = "autopep8", filetypes = { "python" } },
+}
 -- formatters.setup {
 --   { command = "black", filetypes = { "python" } },
 --   { command = "isort", filetypes = { "python" } },

@@ -15,5 +15,7 @@ lvim.builtin.cmp.window.documentation = {
   winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
 }
 
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
 -- vim.opt.spell = true
 -- vim.opt.list = true
